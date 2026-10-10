@@ -1,0 +1,141 @@
+client_id,path,age,locale,sentence,full_audio_path,exists,label
+p225,vctk_adult_0000.wav,23,en,We used to live with dignity in our country.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0000.wav,True,1
+p225,vctk_child_0001.wav,teens,en,Ask her to bring these things with her from the store.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0001.wav,True,0
+p225,vctk_adult_0002.wav,23,en,"If the red of the second bow falls upon the green of the first, the result is to give a bow with an abnormally wide yellow band, since red and green light when mixed form yellow.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0002.wav,True,1
+p225,vctk_child_0003.wav,teens,en,"In fact, he is not even in the squad for the game.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0003.wav,True,0
+p225,vctk_adult_0004.wav,23,en,Drugs are used a lot at the fishing.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0004.wav,True,1
+p225,vctk_child_0005.wav,teens,en,"Well, you can have a tree.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0005.wav,True,0
+p225,vctk_adult_0006.wav,23,en,Innocent people have a right to live in safety.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0006.wav,True,1
+p225,vctk_child_0007.wav,teens,en,Many complicated ideas about the rainbow have been formed.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0007.wav,True,0
+p225,vctk_adult_0008.wav,23,en,We have seen a copy of the report.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0008.wav,True,1
+p225,vctk_child_0009.wav,teens,en,It is beyond the government to deal with this tragedy.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0009.wav,True,0
+p225,vctk_adult_0010.wav,23,en,Funding for the science centre has come from a number of sources.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0010.wav,True,1
+p225,vctk_child_0011.wav,teens,en,And they were being paid ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0011.wav,True,0
+p225,vctk_adult_0012.wav,23,en,We have not reached the point of no return.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0012.wav,True,1
+p225,vctk_child_0013.wav,teens,en,He will go a long way.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0013.wav,True,0
+p225,vctk_adult_0014.wav,23,en,The report was criticised by the Scottish Consumer Council.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0014.wav,True,1
+p225,vctk_child_0015.wav,teens,en,Shareholders will be asked to approve a new replacement scheme.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0015.wav,True,0
+p225,vctk_adult_0016.wav,23,en,It looked like a river.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0016.wav,True,1
+p225,vctk_child_0017.wav,teens,en,"After the match, do you ?",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0017.wav,True,0
+p225,vctk_adult_0018.wav,23,en,The singer is expected to be in hospital for several days.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0018.wav,True,1
+p225,vctk_child_0019.wav,teens,en,Paterson can afford to be generous.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0019.wav,True,0
+p226,vctk_adult_0020.wav,22,en,They will do their own thing.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0020.wav,True,1
+p226,vctk_child_0021.wav,teens,en,Please call Stella.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0021.wav,True,0
+p226,vctk_adult_0022.wav,22,en,The script was funny.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0022.wav,True,1
+p226,vctk_child_0023.wav,teens,en,That could mean the difference between life and death in action.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0023.wav,True,0
+p226,vctk_adult_0024.wav,22,en,Oil embargo endorsed.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0024.wav,True,1
+p226,vctk_child_0025.wav,teens,en,The petition was formally presented at Downing Street yesterday.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0025.wav,True,0
+p226,vctk_adult_0026.wav,22,en,We will turn the corner.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0026.wav,True,1
+p226,vctk_child_0027.wav,teens,en,We have to move forward.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0027.wav,True,0
+p226,vctk_adult_0028.wav,22,en,His third goal was superb.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0028.wav,True,1
+p226,vctk_child_0029.wav,teens,en,It is a terrible place.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0029.wav,True,0
+p226,vctk_adult_0030.wav,22,en,"I am pleased with the result, as it was a possible upset.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0030.wav,True,1
+p226,vctk_child_0031.wav,teens,en,It's never too late.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0031.wav,True,0
+p226,vctk_adult_0032.wav,22,en,The Greeks used to imagine that it was a sign from the gods to foretell war or heavy rain.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0032.wav,True,1
+p226,vctk_child_0033.wav,teens,en,The warning is timely.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0033.wav,True,0
+p226,vctk_adult_0034.wav,22,en,Someone who cares,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0034.wav,True,1
+p226,vctk_child_0035.wav,teens,en,We believe the world has too many refugees already.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0035.wav,True,0
+p226,vctk_adult_0036.wav,22,en,Feel the heat?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0036.wav,True,1
+p226,vctk_child_0037.wav,teens,en,Suggestions of the action being a punishment were dismissed.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0037.wav,True,0
+p226,vctk_adult_0038.wav,22,en,They were outside the circle.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0038.wav,True,1
+p226,vctk_child_0039.wav,teens,en,We have seen a copy of the report.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0039.wav,True,0
+p227,vctk_adult_0040.wav,38,en,She took them for a term.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0040.wav,True,1
+p227,vctk_child_0041.wav,teens,en,She died in middle age.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0041.wav,True,0
+p227,vctk_adult_0042.wav,38,en,I expect a rapid response.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0042.wav,True,1
+p227,vctk_child_0043.wav,teens,en,how do you get it back ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0043.wav,True,0
+p227,vctk_adult_0044.wav,38,en,The latter is due to be finished in February.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0044.wav,True,1
+p227,vctk_child_0045.wav,teens,en,My daughter is an adult.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0045.wav,True,0
+p227,vctk_adult_0046.wav,38,en,It is hoped to complete the merger in the summer.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0046.wav,True,1
+p227,vctk_child_0047.wav,teens,en,It was never a free kick.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0047.wav,True,0
+p227,vctk_adult_0048.wav,38,en,He becomes the new Minister for Sport and Culture.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0048.wav,True,1
+p227,vctk_child_0049.wav,teens,en,To the Hebrews it was a token that there would be no more universal floods.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0049.wav,True,0
+p227,vctk_adult_0050.wav,38,en,"She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0050.wav,True,1
+p227,vctk_child_0051.wav,teens,en,"I should think so, too.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0051.wav,True,0
+p227,vctk_adult_0052.wav,38,en,The jury is still out.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0052.wav,True,1
+p227,vctk_child_0053.wav,teens,en,It is not for any other purpose.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0053.wav,True,0
+p227,vctk_adult_0054.wav,38,en,It opens the door to the Champions League.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0054.wav,True,1
+p227,vctk_child_0055.wav,teens,en,They have known the hard times.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0055.wav,True,0
+p227,vctk_adult_0056.wav,38,en,The party lasted all night.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0056.wav,True,1
+p227,vctk_child_0057.wav,teens,en,We have to look beyond the very short term.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0057.wav,True,0
+p227,vctk_adult_0058.wav,38,en,McNaughton was not so sure.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0058.wav,True,1
+p227,vctk_child_0059.wav,teens,en,You will have seen the adverts.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0059.wav,True,0
+p230,vctk_adult_0100.wav,22,en,"The difference in the rainbow depends considerably upon the size of the drops, and the width of the colored band increases as the size of the drops increases.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0100.wav,True,1
+p230,vctk_child_0101.wav,teens,en,This hasn't happened in a vacuum.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0101.wav,True,0
+p230,vctk_adult_0102.wav,22,en,Neither side would reveal the details of the offer.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0102.wav,True,1
+p230,vctk_child_0103.wav,teens,en,Hospitals are for the ill.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0103.wav,True,0
+p230,vctk_adult_0104.wav,22,en,Did it work ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0104.wav,True,1
+p230,vctk_child_0105.wav,teens,en,"On Thursday, Mr Blair will address the Institute of Public Policy Research.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0105.wav,True,0
+p230,vctk_adult_0106.wav,22,en,We will deal with the refugees.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0106.wav,True,1
+p230,vctk_child_0107.wav,teens,en,She is now on the back benches.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0107.wav,True,0
+p230,vctk_adult_0108.wav,22,en,The marshall at the turn was great.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0108.wav,True,1
+p230,vctk_child_0109.wav,teens,en,City sentiment is in his favour.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0109.wav,True,0
+p230,vctk_adult_0110.wav,22,en,That should be the subject matter of a public debate.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0110.wav,True,1
+p230,vctk_child_0111.wav,teens,en,It is on the internet.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0111.wav,True,0
+p230,vctk_adult_0112.wav,22,en,All will be revealed in due course.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0112.wav,True,1
+p230,vctk_child_0113.wav,teens,en,Before the game we went for a pint.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0113.wav,True,0
+p230,vctk_adult_0114.wav,22,en,It is clear that we must learn the lessons from this outbreak.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0114.wav,True,1
+p230,vctk_child_0115.wav,teens,en,This is a historic occasion.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0115.wav,True,0
+p230,vctk_adult_0116.wav,22,en,The airport was even different.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0116.wav,True,1
+p230,vctk_child_0117.wav,teens,en,You might not make it.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0117.wav,True,0
+p230,vctk_adult_0118.wav,22,en,The group is not paying a dividend.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0118.wav,True,1
+p230,vctk_child_0119.wav,teens,en,"Clearly, the need for a personal loan is written in the stars.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0119.wav,True,0
+p232,vctk_adult_0140.wav,23,en,This obsession wasn't just contained within the world of the losers.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0140.wav,True,1
+p232,vctk_child_0141.wav,teens,en,"I tried to be cautious, but it's hard in that role.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0141.wav,True,0
+p232,vctk_adult_0142.wav,23,en,But it might have done.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0142.wav,True,1
+p232,vctk_child_0143.wav,teens,en,"Now, it's all right.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0143.wav,True,0
+p232,vctk_adult_0144.wav,23,en,The government has until midnight tomorrow to make a decision.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0144.wav,True,1
+p232,vctk_child_0145.wav,teens,en,A council spokesman said it had been a constructive meeting.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0145.wav,True,0
+p232,vctk_adult_0146.wav,23,en,He could make it.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0146.wav,True,1
+p232,vctk_child_0147.wav,teens,en,Child abuse is a dreadful thing.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0147.wav,True,0
+p232,vctk_adult_0148.wav,23,en,It is marvellous.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0148.wav,True,1
+p232,vctk_child_0149.wav,teens,en,Later in the day he was forced to explain his position.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0149.wav,True,0
+p232,vctk_adult_0150.wav,23,en,A tribunal would then consider the seriousness of the incident.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0150.wav,True,1
+p232,vctk_child_0151.wav,teens,en,It was deployed in the Gulf War.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0151.wav,True,0
+p232,vctk_adult_0152.wav,23,en,Mr Docherty said the whole family was shocked.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0152.wav,True,1
+p232,vctk_child_0153.wav,teens,en,"Davis is very supportive, as a director.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0153.wav,True,0
+p232,vctk_adult_0154.wav,23,en,The goals were good.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0154.wav,True,1
+p232,vctk_child_0155.wav,teens,en,Tiger is the exception.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0155.wav,True,0
+p232,vctk_adult_0156.wav,23,en,It has removed a bit of guilt.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0156.wav,True,1
+p232,vctk_child_0157.wav,teens,en,You must have a government and a good civil service.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0157.wav,True,0
+p232,vctk_adult_0158.wav,23,en,Quality Meat Scotland was vigorous in its defence of the labelling.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0158.wav,True,1
+p232,vctk_child_0159.wav,teens,en,The final decision was between Scotland and the Republic of Ireland.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0159.wav,True,0
+p233,vctk_adult_0160.wav,23,en,The decision is an absolute disgrace.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0160.wav,True,1
+p233,vctk_child_0161.wav,teens,en,They have a further report to make in March.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0161.wav,True,0
+p233,vctk_adult_0162.wav,23,en,It depends on the decisions of the member states.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0162.wav,True,1
+p233,vctk_child_0163.wav,teens,en,That means an extra two years.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0163.wav,True,0
+p233,vctk_adult_0164.wav,23,en,"For the Scottish judges, the affair is very delicate and unique.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0164.wav,True,1
+p233,vctk_child_0165.wav,teens,en,We were under a bit of pressure.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0165.wav,True,0
+p233,vctk_adult_0166.wav,23,en,"If that's the case, he will struggle.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0166.wav,True,1
+p233,vctk_child_0167.wav,teens,en,"At the moment, we do not know the extent of their injuries.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0167.wav,True,0
+p233,vctk_adult_0168.wav,23,en,It is also very valuable.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0168.wav,True,1
+p233,vctk_child_0169.wav,teens,en,That is the fact of the matter.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0169.wav,True,0
+p233,vctk_adult_0170.wav,23,en,It is still too early for any likely contenders to have emerged.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0170.wav,True,1
+p233,vctk_child_0171.wav,teens,en,This is the culture change in medicine.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0171.wav,True,0
+p233,vctk_adult_0172.wav,23,en,Initial reports said the aircraft had experienced a loss of power.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0172.wav,True,1
+p233,vctk_child_0173.wav,teens,en,"These take the shape of a long round arch, with its path high above, and its two ends apparently beyond the horizon.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0173.wav,True,0
+p233,vctk_adult_0174.wav,23,en,The attacker has been put in foster care.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0174.wav,True,1
+p233,vctk_child_0175.wav,teens,en,Part of the complex is historic.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0175.wav,True,0
+p233,vctk_adult_0176.wav,23,en,I thought it was my only chance.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0176.wav,True,1
+p233,vctk_child_0177.wav,teens,en,"How are you, sir ?",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0177.wav,True,0
+p233,vctk_adult_0178.wav,23,en,"When the sunlight strikes raindrops in the air, they act as a prism and form a rainbow.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0178.wav,True,1
+p233,vctk_child_0179.wav,teens,en,It added to the spectacle.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0179.wav,True,0
+p234,vctk_adult_0180.wav,22,en,That admission is not surprising.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0180.wav,True,1
+p234,vctk_child_0181.wav,teens,en,"The company still had the confidence of its bankers, he said.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0181.wav,True,0
+p234,vctk_adult_0182.wav,22,en,"As for the warning, it was not needed.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0182.wav,True,1
+p234,vctk_child_0183.wav,teens,en,"When we played them last year, we were beaten by the weather.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0183.wav,True,0
+p234,vctk_adult_0184.wav,22,en,That is the fact of the matter.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0184.wav,True,1
+p234,vctk_child_0185.wav,teens,en,They have set the standard.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0185.wav,True,0
+p234,vctk_adult_0186.wav,22,en,I have never been a member of the council.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0186.wav,True,1
+p234,vctk_child_0187.wav,teens,en,What are they for ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0187.wav,True,0
+p234,vctk_adult_0188.wav,22,en,How independent is that ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0188.wav,True,1
+p234,vctk_child_0189.wav,teens,en,"Five minutes later, the home team were back in front.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0189.wav,True,0
+p234,vctk_adult_0190.wav,22,en,Do they think anyone else wants them ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0190.wav,True,1
+p234,vctk_child_0191.wav,teens,en,This conference was never confirmed.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0191.wav,True,0
+p234,vctk_adult_0192.wav,22,en,"Seriously, we are not concerned at all.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0192.wav,True,1
+p234,vctk_child_0193.wav,teens,en,The market is appalling for initial public offerings.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0193.wav,True,0
+p234,vctk_adult_0194.wav,22,en,But we will have to wait.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0194.wav,True,1
+p234,vctk_child_0195.wav,teens,en,I was in a hole.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0195.wav,True,0
+p234,vctk_adult_0196.wav,22,en,I have a lot of confidence in this team.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0196.wav,True,1
+p234,vctk_child_0197.wav,teens,en,Is our children learning ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0197.wav,True,0
+p234,vctk_adult_0198.wav,22,en,It all started with a visiting rugby club.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0198.wav,True,1
+p234,vctk_child_0199.wav,teens,en,"It is not long term, but I need time to recover.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0199.wav,True,0

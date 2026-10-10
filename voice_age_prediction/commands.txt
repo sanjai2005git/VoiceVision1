@@ -1,0 +1,34 @@
+1. 📱 Launch & Open Applications (OPEN_APP)
+You can open any of the 25 supported apps by speaking:
+
+"Open YouTube"
+"Launch Instagram"
+"Start Minecraft"
+"Open Roblox"
+"Open Duolingo"
+"Launch YouTube Kids"
+"Open Microsoft Teams"
+"Open GPay" / "Open PhonePe"
+"Open Khan Academy" / "Open Sketchbook" / "Open Scratch" / "Open Subway Surfers"
+2. 🛡️ Parental Control App Restrictions (BLOCK_APP / UNBLOCK_APP)
+Parents can dynamically lock or unlock specific apps using voice commands:
+
+Block an App: "Block YouTube", "Restrict Instagram", "Prevent access to Facebook", "Block Reddit"
+Unblock an App: "Unblock YouTube", "Allow Instagram again", "Unlock YouTube", "Remove block from Snapchat"
+(Note: High-risk parental control commands like BLOCK_APP, UNBLOCK_APP, DISABLE_PROTECTION require adult voice verification (18+)).
+
+3. 🔒 Protection Status & Safety Controls (ENABLE_PROTECTION / DISABLE_PROTECTION / CHECK_STATUS)
+Turn On Protection: "Turn on protection", "Enable parental control", "Activate safety mode"
+Turn Off Protection: "Turn off protection", "Disable parental control", "Deactivate restriction"
+Check Security Status: "What is the protection status?", "Is parental control active?", "Are apps restricted right now?"
+4. 👤 Age & User Biometric Verification (CHECK_AGE / VERIFY_USER)
+Check Age Group: "Check my age", "What age group do I belong to?", "Predict my age"
+Authenticate User: "Verify user", "Authenticate me", "Confirm adult profile"
+5. ⚙️ Navigation & Interface Controls (OPEN_PORTAL / OPEN_SETTINGS / EXIT)
+Open Portal/Dashboard: "Open VoiceVision", "Launch parental control portal", "Show dashboard"
+Settings: "Open parental settings", "Go to settings", "Show settings panel"
+Exit Portal: "Exit portal", "Close window", "Shutdown portal"
+6. 📊 Reports, History & Help (VIEW_BLOCKED_APPS / VIEW_ACCESS_HISTORY / HELP)
+View Restricted Apps: "Show me the blocked applications", "List restricted apps", "Which apps are locked?"
+View Access History Logs: "Show access history", "View access logs", "Show connection history"
+Help & Voice Menu: "What commands can I use?", "Help me", "List commands"

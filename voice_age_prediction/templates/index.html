@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceVision - Voice Age Classifier</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navbar -->
+        <header class="play-header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <svg viewBox="0 0 48 48" class="logo-svg">
+                        <path fill="#ea4335" d="M12 4v40l28-20z"/>
+                        <path fill="#34a853" d="M40 24L12 44V24z"/>
+                        <path fill="#4285f4" d="M12 4l28 20L12 24z"/>
+                        <path fill="#fbbc05" d="M12 4v20H4z"/>
+                    </svg>
+                    <span class="logo-text">VoiceVision <span class="badge-v">Store</span></span>
+                </div>
+            </div>
+            
+            <div class="header-center">
+                <div class="search-bar">
+                    <i class="fa fa-search search-icon"></i>
+                    <input type="text" placeholder="Search for apps, games, more..." id="app-search-input">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="age-badge" id="age-status-badge">
+                    <span class="pulse-indicator green"></span>
+                    <span class="badge-label">Verifying...</span>
+                </div>
+                <div class="user-avatar" id="avatar-btn">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Workspace -->
+        <main class="play-content">
+            <!-- Left Panel: Verification Controls -->
+            <section class="verification-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-shield-halved"></i> Age Verification System</h2>
+                    <p class="panel-subtitle">Access controls powered by Voice Age Prediction (CNN-LSTM Model)</p>
+                </div>
+
+                <!-- Mode Selectors -->
+                <div class="verification-tabs">
+                    <button class="tab-btn active" id="tab-voice">
+                        <i class="fa-solid fa-microphone"></i> AI Voice
+                    </button>
+                    <button class="tab-btn" id="tab-face">
+                        <i class="fa-solid fa-camera"></i> AI Face
+                    </button>
+                    <button class="tab-btn" id="tab-manual">
+                        <i class="fa-solid fa-sliders"></i> Manual
+                    </button>
+                </div>
+
+                <!-- Tab Content: Voice Record -->
+                <div class="tab-content active" id="content-voice">
+                    <div class="voice-card">
+                        <p class="tab-desc">Record 5 seconds of your voice reading a sentence or upload an audio clip to determine your age bracket.</p>
+                        
+                        <div class="prompt-text">
+                            <strong>Reading prompt:</strong> <br>
+                            <span class="italic">"Hello, I am testing the voice vision system to see my age classification."</span>
+                        </div>
+
+                        <!-- Audio Visualizer / Mic Control -->
+                        <div class="audio-control-container">
+                            <div class="visualizer-wrapper">
+                                <canvas id="visualizer-canvas" class="visualizer-canvas"></canvas>
+                                <div class="mic-timer" id="record-timer">0.0s</div>
+                            </div>
+
+                            <div class="button-row">
+                                <button class="action-btn mic-btn" id="btn-record">
+                                    <i class="fa-solid fa-microphone"></i> Start Recording
+                                </button>
+                                <button class="action-btn file-btn" id="btn-upload-trigger">
+                                    <i class="fa-solid fa-upload"></i> Upload WAV/MP3
+                                </button>
+                                <input type="file" id="file-audio-input" accept="audio/wav,audio/mp3,audio/x-wav" style="display: none;">
+                            </div>
+                        </div>
+
+                        <!-- Local Samples Selector -->
+                        <div class="sample-picker-section">
+                            <label for="sample-select"><i class="fa-solid fa-circle-play"></i> Quick Test with Pre-recorded Clips:</label>
+                            <div class="sample-row">
+                                <select id="sample-select">
+                                    <option value="" disabled selected>Select a sample file...</option>
+                                </select>
+                                <button class="sample-play-btn" id="btn-play-sample" disabled>
+                                    <i class="fa-solid fa-play"></i> Play
+                                </button>
+                                <button class="sample-eval-btn" id="btn-eval-sample" disabled>
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> Classify
+                                </button>
+                            </div>
+                            <audio id="local-audio-player" style="display: none;"></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content: Face Upload / Live Laptop Camera -->
+                <div class="tab-content" id="content-face">
+                    <div class="face-card">
+                        <p class="tab-desc">Capture your face live using your laptop camera or upload an image to run age classification.</p>
+                        
+                        <!-- Laptop Webcam Live Feed Container -->
+                        <div class="scan-frame-wrapper hidden" id="face-webcam-card" style="margin-bottom: 15px;">
+                            <div class="scanner-circle">
+                                <video id="tab-webcam-stream" autoplay playsinline muted class="webcam-video"></video>
+                                <canvas id="tab-capture-canvas" style="display: none;"></canvas>
+                                <div class="scanner-line"></div>
+                                <i class="fa-solid fa-user scanner-placeholder" id="tab-scanner-placeholder"></i>
+                            </div>
+                            <div class="wizard-status-msg" id="tab-webcam-status" style="margin-top: 10px;">Click Capture Face to capture frame.</div>
+                        </div>
+
+                        <!-- Drag and Drop / Upload container -->
+                        <div class="face-upload-container" id="face-drop-zone">
+                            <i class="fa-regular fa-image upload-icon"></i>
+                            <p class="upload-text">Drag and drop face image here, or <span>browse file</span></p>
+                            <input type="file" id="file-face-input" accept="image/jpeg,image/png" style="display: none;">
+                        </div>
+
+                        <!-- Image Preview Box -->
+                        <div class="image-preview-wrapper hidden" id="preview-wrapper">
+                            <div class="preview-box">
+                                <h4>Original / Captured Image</h4>
+                                <img src="" id="uploaded-image-preview">
+                            </div>
+                            <div class="preview-box hidden" id="face-crop-preview-box">
+                                <h4>Cropped Face</h4>
+                                <img src="" id="cropped-face-preview">
+                            </div>
+                        </div>
+
+                        <!-- Action Row -->
+                        <div class="button-row" style="margin-top: 15px; flex-wrap: wrap; gap: 8px;">
+                            <button class="action-btn face-btn" id="btn-tab-cam-start" style="background: var(--primary); color: #0b0e14; font-weight: 600;">
+                                <i class="fa-solid fa-camera"></i> Use Laptop Cam
+                            </button>
+                            <button class="action-btn face-btn hidden" id="btn-tab-cam-capture" style="background: #e65100; color: white;">
+                                <i class="fa-solid fa-circle-dot"></i> Capture Face
+                            </button>
+                            <button class="action-btn face-btn" id="btn-eval-face" style="background: var(--secondary); color: white;" disabled>
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Classify Face
+                            </button>
+                            <button class="action-btn file-btn hidden" id="btn-reset-face">
+                                <i class="fa-solid fa-rotate-left"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Content: Manual Toggle -->
+                <div class="tab-content" id="content-manual">
+                    <div class="manual-card">
+                        <p class="tab-desc">Simulate different age categories directly for interface inspection.</p>
+                        <div class="selector-row">
+                            <button class="manual-age-btn active" id="btn-age-child">
+                                <div class="btn-icon-wrapper"><i class="fa-solid fa-child"></i></div>
+                                <div class="btn-info">
+                                    <span class="title">Below 18</span>
+                                    <span class="desc">Locks 18+ content</span>
+                                </div>
+                            </button>
+                            <button class="manual-age-btn" id="btn-age-adult">
+                                <div class="btn-icon-wrapper"><i class="fa-solid fa-user-tie"></i></div>
+                                <div class="btn-info">
+                                    <span class="title">18 or Above</span>
+                                    <span class="desc">Unlocks all content</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inference Results Output -->
+                <div class="inference-results-card hidden" id="inference-results">
+                    <div class="card-header">
+                        <h3>Prediction Results</h3>
+                        <span class="badge" id="res-badge-type">AI Mode</span>
+                    </div>
+                    <div class="res-details">
+                        <div class="res-row">
+                            <span class="res-label">Detected Class:</span>
+                            <strong class="res-val" id="res-class">-</strong>
+                        </div>
+                        <div class="res-row">
+                            <span class="res-label">Model Output Prob:</span>
+                            <span class="res-val" id="res-prob">-</span>
+                        </div>
+                        <div class="res-row">
+                            <span class="res-label">Prediction Confidence:</span>
+                            <span class="res-val" id="res-confidence">-</span>
+                        </div>
+                        <div class="res-progress-container">
+                            <div class="res-progress-label">Below 18 <span style="float: right;">18 or Above</span></div>
+                            <div class="res-progress-track">
+                                <div class="res-progress-bar" id="res-progress-indicator" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model Stats -->
+                <div class="model-stats-card">
+                    <h3><i class="fa-solid fa-microchip"></i> System Information</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-name">Classifier Accuracy:</span>
+                            <strong class="stat-val text-green">92.00% (Test Set)</strong>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Input Length:</span>
+                            <span class="stat-val">5.0 seconds</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Sample Rate:</span>
+                            <span class="stat-val">16,000 Hz (Mono)</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Feature Extraction:</span>
+                            <span class="stat-val">Engineered (Mean/Std normalized)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: App Store Grid -->
+            <section class="store-panel">
+                <div class="store-header">
+                    <h1 id="store-title">Featured Apps</h1>
+                    <div class="store-filter-info">
+                        <span class="total-badge">25 Apps (5 &times; 5 Grid)</span>
+                    </div>
+                </div>
+
+                <!-- Grid -->
+                <div class="apps-grid-5x5" id="apps-container">
+                    <!-- Apps will be dynamically injected by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Floating Assistant Bubble -->
+        <div class="assistant-bubble" id="btn-assistant-toggle">
+            <i class="fa-solid fa-microphone-lines assistant-mic-icon"></i>
+            <div class="assistant-tooltip">Voice Assistant</div>
+        </div>
+
+        <!-- VoiceVision NLP Assistant Drawer -->
+        <div class="assistant-drawer hidden" id="assistant-drawer">
+            <div class="drawer-header">
+                <h3><i class="fa-solid fa-brain-circuit"></i> VoiceVision Assistant</h3>
+                <button class="drawer-close-btn" id="btn-assistant-close">&times;</button>
+            </div>
+            
+            <div class="drawer-body">
+                <!-- Protection Status Indicator -->
+                <div class="assistant-status-box" id="assistant-status-box">
+                    <span class="status-dot green" id="assistant-status-dot"></span>
+                    <span class="status-text" id="assistant-status-text">Parental Control: Enabled</span>
+                </div>
+
+                <!-- Listening wave & controls -->
+                <div class="assistant-mic-section">
+                    <div class="assistant-waveform-wrapper">
+                        <canvas id="assistant-visualizer" class="assistant-visualizer"></canvas>
+                        <div class="assistant-timer-ring" id="assistant-timer">0.0s</div>
+                    </div>
+                    
+                    <div class="button-row" style="margin-top: 12px;">
+                        <button class="action-btn mic-btn" id="btn-assistant-record" style="flex: 2;">
+                            <i class="fa-solid fa-microphone"></i> Speak Command
+                        </button>
+                        <button class="action-btn file-btn" id="btn-assistant-upload-trigger" style="flex: 1; padding: 10px;">
+                            <i class="fa-solid fa-upload"></i> Upload
+                        </button>
+                        <input type="file" id="assistant-file-input" accept="audio/wav,audio/mp3" style="display: none;">
+                    </div>
+                    <div class="assistant-status-hint" id="assistant-hint">Click Speak or upload a WAV command file.</div>
+                </div>
+
+                <!-- Real-time transcription telemetry card -->
+                <div class="assistant-telemetry-card">
+                    <h4>Command Telemetry</h4>
+                    <div class="telemetry-grid">
+                        <div class="telemetry-item wide">
+                            <span class="t-name">Transcribed Speech:</span>
+                            <strong class="t-val text-blue" id="t-transcription">-</strong>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="t-name">Detected Intent:</span>
+                            <strong class="t-val" id="t-intent">-</strong>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="t-name">App Entity:</span>
+                            <strong class="t-val" id="t-entity">-</strong>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="t-name">NLP Confidence:</span>
+                            <strong class="t-val" id="t-confidence">-</strong>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="t-name">Voice Authentication:</span>
+                            <strong class="t-val" id="t-verification">-</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Execution Logs -->
+                <div class="execution-log-box">
+                    <h4>System Action Feedback</h4>
+                    <div class="log-message" id="assistant-action-feedback">Waiting for parental command...</div>
+                </div>
+
+                <!-- Command History -->
+                <div class="history-log-box">
+                    <h4>Recent Voice Commands</h4>
+                    <ul class="history-list" id="assistant-history-list">
+                        <li class="history-item empty">No recent commands.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal / Detail Modal -->
+    <div class="modal-overlay hidden" id="modal-container">
+        <!-- App Details / Welcome Screen -->
+        <div class="modal-card-app welcome-screen hidden" id="app-welcome-modal">
+            <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+            <div class="welcome-content">
+                <div class="welcome-header">
+                    <img src="" class="welcome-icon" id="welcome-app-icon">
+                    <h2 class="welcome-app-name" id="welcome-app-name">App Name</h2>
+                    <p class="welcome-app-dev" id="welcome-app-dev">Developer Inc.</p>
+                </div>
+                <div class="welcome-badge-row">
+                    <span class="welcome-rating"><i class="fa-solid fa-star"></i> <span id="welcome-app-rating">4.8</span></span>
+                    <span class="welcome-age-rating" id="welcome-app-age-limit">Teen</span>
+                </div>
+                <div class="welcome-mockup-body">
+                    <div class="device-notch"></div>
+                    <div class="welcome-message-banner">
+                        <i class="fa-solid fa-circle-check welcome-tick"></i>
+                        <h1>Welcome to <span id="welcome-brand-text">App</span></h1>
+                        <p>Your dynamic environment is fully loaded. Age verified successfully.</p>
+                    </div>
+                    <div class="mockup-placeholder-widgets">
+                        <div class="widget-row">
+                            <div class="widget-col wide"></div>
+                            <div class="widget-col square"></div>
+                        </div>
+                        <div class="widget-row">
+                            <div class="widget-col square"></div>
+                            <div class="widget-col wide"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-actions">
+                    <button class="close-welcome-btn" onclick="closeModal()">Back to VoiceVision</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restriction Notice Modal -->
+        <div class="modal-card-app restriction-screen hidden" id="app-restricted-modal">
+            <button class="modal-close-btn" onclick="closeModal()">&times;</button>
+            <div class="restricted-content">
+                <div class="restricted-icon-box">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <h2 class="restricted-title">Content Blocked</h2>
+                <p class="restricted-desc">This application (<strong id="restricted-app-name">App Name</strong>) is rated <strong>18+</strong> and has been restricted because your age category is verified as <strong>Below 18</strong>.</p>
+                <div class="restricted-advice-box">
+                    <p><i class="fa-solid fa-info-circle"></i> To access this app, you must verify your age as 18 or older using the voice verification system on the left panel.</p>
+                </div>
+                <button class="close-restricted-btn" onclick="closeModal()">Understood</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Multi-Modal Age Verification Wizard Overlay -->
+    <div class="wizard-overlay" id="wizard-container">
+        <div class="wizard-card-modal">
+            <!-- Header -->
+            <div class="wizard-header">
+                <div class="wizard-logo">
+                    <svg viewBox="0 0 48 48" class="logo-svg">
+                        <path fill="#ea4335" d="M12 4v40l28-20z"/>
+                        <path fill="#34a853" d="M40 24L12 44V24z"/>
+                        <path fill="#4285f4" d="M12 4l28 20L12 24z"/>
+                        <path fill="#fbbc05" d="M12 4v20H4z"/>
+                    </svg>
+                    <span>VoiceVision <span class="badge-v">Multi-Modal Gate</span></span>
+                </div>
+                <div class="step-tracker">
+                    <span class="step-dot active" id="dot-step-1">1</span>
+                    <span class="step-line"></span>
+                    <span class="step-dot" id="dot-step-2">2</span>
+                    <span class="step-line"></span>
+                    <span class="step-dot" id="dot-step-3">3</span>
+                </div>
+            </div>
+
+            <!-- STEP 1: FACE SCAN -->
+            <div class="wizard-step active" id="wizard-step-1">
+                <h2>Step 1: Face Age Prediction Scan</h2>
+                <p class="wizard-subtitle">We need a quick face scan to determine your age group.</p>
+                
+                <div class="scan-frame-wrapper">
+                    <!-- Scanner Circle -->
+                    <div class="scanner-circle">
+                        <video id="webcam-stream" autoplay playsinline muted class="webcam-video"></video>
+                        <canvas id="capture-canvas" style="display: none;"></canvas>
+                        <div class="scanner-line"></div>
+                        <i class="fa-solid fa-user scanner-placeholder" id="scanner-placeholder"></i>
+                    </div>
+                </div>
+
+                <div class="wizard-actions-row">
+                    <button class="wizard-btn btn-primary" id="btn-wizard-scan">
+                        <i class="fa-solid fa-camera"></i> Start Live Scan
+                    </button>
+                    <button class="wizard-btn btn-secondary" id="btn-wizard-upload-face-trigger">
+                        <i class="fa-solid fa-upload"></i> Upload Photo Fallback
+                    </button>
+                    <input type="file" id="wizard-file-face-input" accept="image/jpeg,image/png" style="display: none;">
+                </div>
+                <div class="wizard-status-msg" id="wizard-face-status">Please allow webcam access or upload a photo.</div>
+            </div>
+
+            <!-- STEP 2: VOICE RECORDING -->
+            <div class="wizard-step" id="wizard-step-2">
+                <h2>Step 2: Voice Age Prediction Scan</h2>
+                <p class="wizard-subtitle">Read the reading prompt below for 5 seconds to verify your voice age.</p>
+                
+                <div class="wizard-prompt-box">
+                    <strong>Reading prompt:</strong> <br>
+                    <span class="italic">"Hello, I am testing the voice vision system to see my age classification."</span>
+                </div>
+
+                <!-- Voice Recording Progress Indicator -->
+                <div class="voice-progress-wrapper">
+                    <div class="voice-progress-ring-container">
+                        <div class="progress-number" id="wizard-voice-timer">5.0s</div>
+                        <svg class="progress-ring-svg">
+                            <circle class="ring-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="ring-bar" id="wizard-voice-progress-bar" cx="50" cy="50" r="45"></circle>
+                        </svg>
+                    </div>
+                    <canvas id="wizard-voice-visualizer" class="wizard-voice-canvas"></canvas>
+                </div>
+
+                <div class="wizard-actions-row">
+                    <button class="wizard-btn btn-primary btn-record-red" id="btn-wizard-record">
+                        <i class="fa-solid fa-microphone"></i> Start Voice Record
+                    </button>
+                    <button class="wizard-btn btn-secondary" id="btn-wizard-upload-voice-trigger">
+                        <i class="fa-solid fa-upload"></i> Upload WAV/MP3 Fallback
+                    </button>
+                    <input type="file" id="wizard-file-audio-input" accept="audio/wav,audio/mp3" style="display: none;">
+                </div>
+                <div class="wizard-status-msg" id="wizard-voice-status">Click Record to begin.</div>
+            </div>
+
+            <!-- STEP 3: CONSOLIDATED RESULTS -->
+            <div class="wizard-step" id="wizard-step-3">
+                <h2>Verification Summary</h2>
+                <p class="wizard-subtitle">Combining both verification models for final parental access control.</p>
+
+                <!-- Comparison Cards Grid -->
+                <div class="result-comparison-grid">
+                    <!-- Face Card -->
+                    <div class="result-card" id="wizard-card-face">
+                        <div class="card-icon-header"><i class="fa-solid fa-user-circle"></i></div>
+                        <h3>Face Model</h3>
+                        <div class="result-val-pill" id="wizard-res-face-pill">-</div>
+                        <div class="result-detail" id="wizard-res-face-bin">Bin: -</div>
+                        <div class="result-detail" id="wizard-res-face-conf">Conf: -</div>
+                    </div>
+                    <!-- Voice Card -->
+                    <div class="result-card" id="wizard-card-voice">
+                        <div class="card-icon-header"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <h3>Voice Model</h3>
+                        <div class="result-val-pill" id="wizard-res-voice-pill">-</div>
+                        <div class="result-detail" id="wizard-res-voice-bin">Class: -</div>
+                        <div class="result-detail" id="wizard-res-voice-conf">Conf: -</div>
+                    </div>
+                </div>
+
+                <!-- Combined Verdict Box -->
+                <div class="verdict-display-box" id="wizard-verdict-box">
+                    <h3 id="wizard-verdict-title">Evaluating Multi-Modal Results...</h3>
+                    <p id="wizard-verdict-desc">Please complete both stages.</p>
+                </div>
+
+                <button class="wizard-btn btn-primary" id="btn-wizard-enter" disabled>
+                    Enter VoiceVision Store <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

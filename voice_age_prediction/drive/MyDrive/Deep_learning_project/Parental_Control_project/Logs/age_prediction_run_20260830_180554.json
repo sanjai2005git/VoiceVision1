@@ -1,0 +1,21 @@
+{
+    "timestamp": "2026-08-30T18:05:54.982219",
+    "config": {
+        "Model_Selection": 2,
+        "Preprocessing": false,
+        "NeedCNN": false,
+        "bin_Selected": 0,
+        "ConvNextTiny_Select": 0,
+        "MediaPipe_LandMark_NN": 0
+    },
+    "predictions": [
+        {
+            "face_index": 1,
+            "crop_path": "C:\\VoiceVision-voice\\voice_age_prediction\\temp_faces\\face_1.jpg",
+            "actual_age": 7,
+            "actual_bin": "[1-10]",
+            "predicted_bin": "[1-10]",
+            "confidence": 0.9214766025543213
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+client_id,path,age,locale,sentence,full_audio_path,exists,label
+p229,vctk_adult_0080.wav,23,en,"However, they continued in their pursuit of victory.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0080.wav,True,1
+p229,vctk_child_0081.wav,teens,en,I've got no secret.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0081.wav,True,0
+p229,vctk_adult_0082.wav,23,en,They're just different.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0082.wav,True,1
+p229,vctk_child_0083.wav,teens,en,O Neill is caught between a rock and a hard place.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0083.wav,True,0
+p229,vctk_adult_0084.wav,23,en,Everything was an effort.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0084.wav,True,1
+p229,vctk_child_0085.wav,teens,en,He later became a respected High Court judge.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0085.wav,True,0
+p229,vctk_adult_0086.wav,23,en,"They might be broken, but they are not defeated.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0086.wav,True,1
+p229,vctk_child_0087.wav,teens,en,I'm so pleased the show has won a prize.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0087.wav,True,0
+p229,vctk_adult_0088.wav,23,en,It was chaotic.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0088.wav,True,1
+p229,vctk_child_0089.wav,teens,en,We are determined to continue on this mission and we will prevail.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0089.wav,True,0
+p229,vctk_adult_0090.wav,23,en,My mother is a widow.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0090.wav,True,1
+p229,vctk_child_0091.wav,teens,en,"We have the experience, the courses, and an abundance of confidence.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0091.wav,True,0
+p229,vctk_adult_0092.wav,23,en,"He was my big brother, my father, my grandfather.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0092.wav,True,1
+p229,vctk_child_0093.wav,teens,en,I came to complete.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0093.wav,True,0
+p229,vctk_adult_0094.wav,23,en,The procedures were not in place.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0094.wav,True,1
+p229,vctk_child_0095.wav,teens,en,"If not, he should go home.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0095.wav,True,0
+p229,vctk_adult_0096.wav,23,en,He plans to call for an aid package from Mr Macdonald.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0096.wav,True,1
+p229,vctk_child_0097.wav,teens,en,"Hopefully, we can learn from our mistakes.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0097.wav,True,0
+p229,vctk_adult_0098.wav,23,en,The perception is that we do not care about social issues.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0098.wav,True,1
+p229,vctk_child_0099.wav,teens,en,We are very strongly behind the bid.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0099.wav,True,0

@@ -1,0 +1,41 @@
+client_id,path,age,locale,sentence,full_audio_path,exists,label
+p228,vctk_adult_0060.wav,22,en,Further protests are likely.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0060.wav,True,1
+p228,vctk_child_0061.wav,teens,en,Some have accepted it as a miracle without physical explanation.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0061.wav,True,0
+p228,vctk_adult_0062.wav,22,en,Mr Campbell received a phone call.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0062.wav,True,1
+p228,vctk_child_0063.wav,teens,en,"Charlie Gordon, leader of the council, dismissed the suggestion.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0063.wav,True,0
+p228,vctk_adult_0064.wav,22,en,I was rubbish.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0064.wav,True,1
+p228,vctk_child_0065.wav,teens,en,He will address the nation this evening.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0065.wav,True,0
+p228,vctk_adult_0066.wav,22,en,It was no secret that I wanted to sign him.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0066.wav,True,1
+p228,vctk_child_0067.wav,teens,en,"In short, the Scottish excess is not difficult to justify.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0067.wav,True,0
+p228,vctk_adult_0068.wav,22,en,It became a book by itself.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0068.wav,True,1
+p228,vctk_child_0069.wav,teens,en,A thousand years ago the church was a powerful force in Europe.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0069.wav,True,0
+p228,vctk_adult_0070.wav,22,en,It's in his blood.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0070.wav,True,1
+p228,vctk_child_0071.wav,teens,en,It is urgent.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0071.wav,True,0
+p228,vctk_adult_0072.wav,22,en,The picture is the same across Scotland.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0072.wav,True,1
+p228,vctk_child_0073.wav,teens,en,They will run a mile.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0073.wav,True,0
+p228,vctk_adult_0074.wav,22,en,Is that a serious question ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0074.wav,True,1
+p228,vctk_child_0075.wav,teens,en,Everyone was in tears.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0075.wav,True,0
+p228,vctk_adult_0076.wav,22,en,"This time, it will have opened up the field a little bit.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0076.wav,True,1
+p228,vctk_child_0077.wav,teens,en,"Eight months later, he was dead.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0077.wav,True,0
+p228,vctk_adult_0078.wav,22,en,The Norsemen considered the rainbow as a bridge over which the gods passed from earth to their home in the sky.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0078.wav,True,1
+p228,vctk_child_0079.wav,teens,en,To the Hebrews it was a token that there would be no more universal floods.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0079.wav,True,0
+p231,vctk_adult_0120.wav,23,en,I've wanted to buy one for the National Gallery.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0120.wav,True,1
+p231,vctk_child_0121.wav,teens,en,She said she was really sorry.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0121.wav,True,0
+p231,vctk_adult_0122.wav,23,en,Before the game we went for a pint.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0122.wav,True,1
+p231,vctk_child_0123.wav,teens,en,I would love to think that she could win.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0123.wav,True,0
+p231,vctk_adult_0124.wav,23,en,And they were being paid ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0124.wav,True,1
+p231,vctk_child_0125.wav,teens,en,We went straight into the bedroom.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0125.wav,True,0
+p231,vctk_adult_0126.wav,23,en,Is it in the right place ?,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0126.wav,True,1
+p231,vctk_child_0127.wav,teens,en,It is a large number.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0127.wav,True,0
+p231,vctk_adult_0128.wav,23,en,We played them off the pitch.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0128.wav,True,1
+p231,vctk_child_0129.wav,teens,en,Tourism is a vital industry for Scotland.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0129.wav,True,0
+p231,vctk_adult_0130.wav,23,en,I won't make an official complaint.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0130.wav,True,1
+p231,vctk_child_0131.wav,teens,en,This much I can tell you.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0131.wav,True,0
+p231,vctk_adult_0132.wav,23,en,"It is too pretty, it is too small.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0132.wav,True,1
+p231,vctk_child_0133.wav,teens,en,Both men were on one-year contracts.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0133.wav,True,0
+p231,vctk_adult_0134.wav,23,en,We have got no money to go anywhere.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0134.wav,True,1
+p231,vctk_child_0135.wav,teens,en,"She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0135.wav,True,0
+p231,vctk_adult_0136.wav,23,en,"To get good people, you need to offer them enough money.",C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0136.wav,True,1
+p231,vctk_child_0137.wav,teens,en,It was not a finale he would want to remember.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0137.wav,True,0
+p231,vctk_adult_0138.wav,23,en,There's still plenty time left.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_adult_0138.wav,True,1
+p231,vctk_child_0139.wav,teens,en,We represent a wide range of society.,C:\VoiceVision-voice\voice_age_prediction\data\clips\vctk_child_0139.wav,True,0

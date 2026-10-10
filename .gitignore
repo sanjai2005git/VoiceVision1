@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary runtime capture files
+temp/
+temp_faces/
+voice_age_prediction/temp/
+voice_age_prediction/temp_faces/
+
+# Agent session data
+brain/
+
+# Large dataset archives & pretrained model dumps
+Age_Recognition-*/
+
+# OS generated files
+.DS_Store
+Thumbs.db

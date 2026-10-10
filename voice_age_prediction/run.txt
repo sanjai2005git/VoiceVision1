@@ -1,0 +1,15 @@
+cd c:\VoiceVision-voice
+.venv\Scripts\Activate.ps1
+   or
+.venv\Scripts\activate.bat
+cd voice_age_prediction
+python app.py
+.venv\Scripts\python.exe voice_age_prediction/inference.py --audio voice_age_prediction/audio-new1.mp3
+ .venv\Scripts\python.exe voice_age_prediction/train.py
+
+
+ .venv\Scripts\Activate.ps1
+.venv\Scripts\python.exe voice_age_prediction/customized_testing_phase.py
+.venv\Scripts\python.exe voice_age_prediction/inference.py --audio voice_age_prediction/boy1.mp3
+.venv\Scripts\python.exe voice_age_prediction/app.py
+http://127.0.0.1:5000/
